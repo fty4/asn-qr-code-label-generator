@@ -207,16 +207,16 @@
             >
               <img
                 x-effect="generateQrCode($el, label.text);"
-                class="mr-[0.5mm] aspect-square h-[7.5mm] w-[7.5mm] flex-none"
+                class="ml-[0.75mm] mr-[0.5mm] aspect-square h-[8.25mm] w-[8.25mm] flex-none"
               ></img>
               <div
                 class="flex-grow"
                 :class="{
-                'text-[3.9mm]': label.text.length <= 6,
-                'text-[3.2mm]': label.text.length == 7,
-                'text-[2.7mm]': label.text.length == 8,
-                'text-[2.4mm]': label.text.length == 9,
-                'text-[2.1mm]': label.text.length >= 10,
+                'text-[3.6mm]': label.text.length <= 6,
+                'text-[2.9mm]': label.text.length == 7,
+                'text-[2.4mm]': label.text.length == 8,
+                'text-[2.0mm]': label.text.length == 9,
+                'text-[1.8mm]': label.text.length >= 10,
               }"
                 x-text="label.text"
               ></div>
