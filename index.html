@@ -195,10 +195,10 @@
     </div>
 
     <div
-      class="container mx-auto w-[210mm] border px-[8.45mm] py-[13.5mm] print:w-full print:max-w-full print:border-0"
+      class="container mx-auto w-[210mm] border px-[8.45mm] py-[14mm] print:w-full print:max-w-full print:border-0"
     >
       <!-- Display QR Code Labels -->
-      <ol class="grid grid-cols-7 gap-x-[2.55mm]">
+      <ol class="grid grid-cols-7 gap-x-[4mm]">
         <template x-for="label in labels">
           <li class="h-[10mm] w-[25.4mm]">
             <div
@@ -207,7 +207,7 @@
             >
               <img
                 x-effect="generateQrCode($el, label.text);"
-                class="mr-[0.5mm] aspect-square h-[9mm] w-[9mm] flex-none"
+                class="mr-[0.5mm] aspect-square h-[7.5mm] w-[7.5mm] flex-none"
               ></img>
               <div
                 class="flex-grow"
